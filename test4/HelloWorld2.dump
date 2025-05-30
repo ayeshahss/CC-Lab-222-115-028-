@@ -1,0 +1,52 @@
+
+div.o:     file format pe-i386
+
+
+Disassembly of section .text:
+
+00000000 <_main>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 e4 f0             	and    esp,0xfffffff0
+   6:	83 ec 40             	sub    esp,0x40
+   9:	e8 00 00 00 00       	call   e <_main+0xe>
+   e:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+  15:	e8 00 00 00 00       	call   1a <_main+0x1a>
+  1a:	8d 44 24 38          	lea    eax,[esp+0x38]
+  1e:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  22:	c7 04 24 11 00 00 00 	mov    DWORD PTR [esp],0x11
+  29:	e8 00 00 00 00       	call   2e <_main+0x2e>
+  2e:	c7 04 24 14 00 00 00 	mov    DWORD PTR [esp],0x14
+  35:	e8 00 00 00 00       	call   3a <_main+0x3a>
+  3a:	8d 44 24 34          	lea    eax,[esp+0x34]
+  3e:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  42:	c7 04 24 11 00 00 00 	mov    DWORD PTR [esp],0x11
+  49:	e8 00 00 00 00       	call   4e <_main+0x4e>
+  4e:	8b 44 24 34          	mov    eax,DWORD PTR [esp+0x34]
+  52:	85 c0                	test   eax,eax
+  54:	75 0e                	jne    64 <_main+0x64>
+  56:	c7 04 24 24 00 00 00 	mov    DWORD PTR [esp],0x24
+  5d:	e8 00 00 00 00       	call   62 <_main+0x62>
+  62:	eb 42                	jmp    a6 <_main+0xa6>
+  64:	8b 44 24 38          	mov    eax,DWORD PTR [esp+0x38]
+  68:	89 44 24 2c          	mov    DWORD PTR [esp+0x2c],eax
+  6c:	db 44 24 2c          	fild   DWORD PTR [esp+0x2c]
+  70:	8b 44 24 34          	mov    eax,DWORD PTR [esp+0x34]
+  74:	89 44 24 2c          	mov    DWORD PTR [esp+0x2c],eax
+  78:	db 44 24 2c          	fild   DWORD PTR [esp+0x2c]
+  7c:	de f9                	fdivrp st(1),st
+  7e:	d9 5c 24 3c          	fstp   DWORD PTR [esp+0x3c]
+  82:	d9 44 24 3c          	fld    DWORD PTR [esp+0x3c]
+  86:	8b 54 24 34          	mov    edx,DWORD PTR [esp+0x34]
+  8a:	8b 44 24 38          	mov    eax,DWORD PTR [esp+0x38]
+  8e:	dd 5c 24 0c          	fstp   QWORD PTR [esp+0xc]
+  92:	89 54 24 08          	mov    DWORD PTR [esp+0x8],edx
+  96:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  9a:	c7 04 24 4c 00 00 00 	mov    DWORD PTR [esp],0x4c
+  a1:	e8 00 00 00 00       	call   a6 <_main+0xa6>
+  a6:	b8 00 00 00 00       	mov    eax,0x0
+  ab:	c9                   	leave  
+  ac:	c3                   	ret    
+  ad:	90                   	nop
+  ae:	90                   	nop
+  af:	90                   	nop

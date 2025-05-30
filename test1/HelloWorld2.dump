@@ -1,0 +1,40 @@
+
+sum.o:     file format pe-i386
+
+
+Disassembly of section .text:
+
+00000000 <_main>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 e4 f0             	and    esp,0xfffffff0
+   6:	83 ec 20             	sub    esp,0x20
+   9:	e8 00 00 00 00       	call   e <_main+0xe>
+   e:	c7 04 24 00 00 00 00 	mov    DWORD PTR [esp],0x0
+  15:	e8 00 00 00 00       	call   1a <_main+0x1a>
+  1a:	8d 44 24 18          	lea    eax,[esp+0x18]
+  1e:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  22:	c7 04 24 15 00 00 00 	mov    DWORD PTR [esp],0x15
+  29:	e8 00 00 00 00       	call   2e <_main+0x2e>
+  2e:	c7 04 24 18 00 00 00 	mov    DWORD PTR [esp],0x18
+  35:	e8 00 00 00 00       	call   3a <_main+0x3a>
+  3a:	8d 44 24 14          	lea    eax,[esp+0x14]
+  3e:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  42:	c7 04 24 15 00 00 00 	mov    DWORD PTR [esp],0x15
+  49:	e8 00 00 00 00       	call   4e <_main+0x4e>
+  4e:	8b 54 24 18          	mov    edx,DWORD PTR [esp+0x18]
+  52:	8b 44 24 14          	mov    eax,DWORD PTR [esp+0x14]
+  56:	01 d0                	add    eax,edx
+  58:	89 44 24 1c          	mov    DWORD PTR [esp+0x1c],eax
+  5c:	8b 54 24 14          	mov    edx,DWORD PTR [esp+0x14]
+  60:	8b 44 24 18          	mov    eax,DWORD PTR [esp+0x18]
+  64:	8b 4c 24 1c          	mov    ecx,DWORD PTR [esp+0x1c]
+  68:	89 4c 24 0c          	mov    DWORD PTR [esp+0xc],ecx
+  6c:	89 54 24 08          	mov    DWORD PTR [esp+0x8],edx
+  70:	89 44 24 04          	mov    DWORD PTR [esp+0x4],eax
+  74:	c7 04 24 2e 00 00 00 	mov    DWORD PTR [esp],0x2e
+  7b:	e8 00 00 00 00       	call   80 <_main+0x80>
+  80:	b8 00 00 00 00       	mov    eax,0x0
+  85:	c9                   	leave  
+  86:	c3                   	ret    
+  87:	90                   	nop
